@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpotFinder - Estacionamientos inteligentes</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Plataforma inteligente de estacionamientos con IoT, RPA y Chatbot. Publica tu espacio o encuentra el lugar perfecto para aparcar.">
+
+  <meta property="og:title" content="SpotFinder - Estacionamientos inteligentes">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="Plataforma inteligente de estacionamientos con IoT, RPA y Chatbot.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SpotFinder - Estacionamientos inteligentes">
+  <meta name="twitter:description" content="Plataforma inteligente de estacionamientos con IoT, RPA y Chatbot.">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0F172A">
+</head>
+
+<body>
+  <!-- Skip link para accesibilidad -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header sticky -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__content">
+        <!-- SLOT: LOGO_SLOT -->
+        <div class="slot slot--logo" data-slot="LOGO_SLOT">
+          <span class="logo">SpotFinder</span>
+          <!-- COLOCA AQUÍ TU LOGO (160×40) -->
+        </div>
+
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link">Inicio</a></li>
+            <li><a href="#beneficios" class="nav__link">Beneficios</a></li>
+            <li><a href="#como-funciona" class="nav__link">Cómo funciona</a></li>
+            <li><a href="#servicios" class="nav__link">Servicios</a></li>
+            <li><a href="#quienes-somos" class="nav__link">Quiénes somos</a></li>
+            <li><a href="#planes" class="nav__link">Planes</a></li>
+            <li><a href="#resenas" class="nav__link">Reseñas</a></li>
+            <li><a href="#contacto" class="nav__link">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero / Home -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="hero__title">Estacionamientos inteligentes: publica, reserva y automatiza.</h1>
+            <p class="hero__subtitle">
+              Conectamos propietarios y conductores a través de IoT, RPA y Chatbot 24/7.
+              Una plataforma inteligente para maximizar ingresos y encontrar el estacionamiento perfecto.
+            </p>
+
+            <div class="hero__ctas">
+              <button class="btn btn--primary">Publicar mi espacio (Web)</button>
+              <button class="btn btn--secondary">Descargar la app (Móvil)</button>
+            </div>
+
+            <!-- SLOT: HERO_STORES_SLOT -->
+            <div class="hero__stores slot" data-slot="HERO_STORES_SLOT">
+              <div class="store-badge">App Store</div>
+              <div class="store-badge">Google Play</div>
+            </div>
+
+            <div class="hero__badges">
+              <span class="badge">IoT en tiempo real</span>
+              <span class="badge">Cobros con RPA</span>
+              <span class="badge">Chatbot 24/7</span>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <!-- SLOT: HERO_MOCKUP_SLOT -->
+            <div class="slot slot--video" data-slot="HERO_MOCKUP_SLOT">
+              <span>COLOCA AQUÍ IMAGEN/MOCKUP (mapa + teléfono)</span>
+            </div>
+            <div class="hero__search">
+              <input type="text" placeholder="¿Dónde quieres aparcar?" class="search-input">
+              <button class="search-btn">Buscar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Beneficios para todos</h2>
+          <p class="section-subtitle">Plataforma unificada para propietarios y conductores</p>
+        </div>
+
+        <div class="benefits__groups">
+          <div class="benefits__group">
+            <h3 class="benefits__group-title">Para Propietarios</h3>
+            <div class="benefits__grid">
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_1">📈</div>
+                <h4 class="benefit-card__title">Ingresos extra</h4>
+                <p class="benefit-card__text">Monetiza tu espacio cuando no lo uses</p>
+              </div>
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_2">🔌</div>
+                <h4 class="benefit-card__title">Ocupación con IoT</h4>
+                <p class="benefit-card__text">Sensores inteligentes para control automático</p>
+              </div>
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_3">🤖</div>
+                <h4 class="benefit-card__title">Cobros/Facturas con RPA</h4>
+                <p class="benefit-card__text">Automatización completa de pagos</p>
+              </div>
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_4">📊</div>
+                <h4 class="benefit-card__title">Panel simple</h4>
+                <p class="benefit-card__text">Gestiona todo desde una interfaz intuitiva</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefits__group">
+            <h3 class="benefits__group-title">Para Conductores</h3>
+            <div class="benefits__grid">
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_5">⚡</div>
+                <h4 class="benefit-card__title">Reserva en segundos</h4>
+                <p class="benefit-card__text">Encuentra y reserva al instante</p>
+              </div>
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_6">🗺️</div>
+                <h4 class="benefit-card__title">Mapa en tiempo real</h4>
+                <p class="benefit-card__text">Ve disponibilidad actualizada al momento</p>
+              </div>
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_7">🔒</div>
+                <h4 class="benefit-card__title">Pagos seguros</h4>
+                <p class="benefit-card__text">Transacciones protegidas y confiables</p>
+              </div>
+              <div class="benefit-card">
+                <div class="benefit-card__icon slot" data-slot="BENEFIT_IMG_SLOT_8">💬</div>
+                <h4 class="benefit-card__title">Soporte 24/7</h4>
+                <p class="benefit-card__text">Chatbot y asistencia siempre disponible</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section id="como-funciona" class="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Cómo funciona</h2>
+        </div>
+
+        <div class="how-it-works__columns">
+          <div class="how-it-works__column">
+            <h3 class="how-it-works__column-title">Para Propietarios</h3>
+            <div class="steps">
+              <div class="step">
+                <div class="step__number">1</div>
+                <div class="step__content">
+                  <h4 class="step__title">Crea tu cuenta</h4>
+                  <p class="step__text">Regístrate en la plataforma web en menos de 2 minutos</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">2</div>
+                <div class="step__content">
+                  <h4 class="step__title">Registra tu espacio</h4>
+                  <p class="step__text">Agrega precio, horarios, fotos y reglas de uso</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">3</div>
+                <div class="step__content">
+                  <h4 class="step__title">Activa IoT y RPA</h4>
+                  <p class="step__text">Conecta sensores opcionales y automatiza cobros</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">4</div>
+                <div class="step__content">
+                  <h4 class="step__title">Cobros automáticos</h4>
+                  <p class="step__text">Recibe pagos sin intervención manual</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="how-it-works__column">
+            <h3 class="how-it-works__column-title">Para Conductores</h3>
+            <div class="steps">
+              <div class="step">
+                <div class="step__number">1</div>
+                <div class="step__content">
+                  <h4 class="step__title">Buscar en mapa</h4>
+                  <p class="step__text">Localiza espacios disponibles cerca de ti</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">2</div>
+                <div class="step__content">
+                  <h4 class="step__title">Elige</h4>
+                  <p class="step__text">Filtra por precio, distancia y servicios</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">3</div>
+                <div class="step__content">
+                  <h4 class="step__title">Reserva y paga</h4>
+                  <p class="step__text">Confirma tu reserva con pago seguror</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__number">4</div>
+                <div class="step__content">
+                  <h4 class="step__title">Navegar al lugar</h4>
+                  <p class="step__text">Sigue las indicaciones hasta tu espacio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Servicios y características</h2>
+        </div>
+
+        <!-- SLOT: SERVICES_VIDEO_SLOT -->
+        <div class="services__video slot slot--video" data-slot="SERVICES_VIDEO_SLOT">
+          <div class="video-placeholder">
+            <span class="play-icon">▶</span>
+            <span>COLOCA AQUÍ TU VIDEO DE PLATAFORMA (MP4/YouTube)</span>
+          </div>
+        </div>
+
+        <div class="services__features">
+          <span class="chip">Mapa</span>
+          <span class="chip">Filtros</span>
+          <span class="chip">Reseñas</span>
+          <span class="chip">Pagos</span>
+          <span class="chip">Historial</span>
+          <span class="chip">API IoT</span>
+          <span class="chip">Recordatorios RPA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiénes somos -->
+    <section id="quienes-somos" class="about">
+      <div class="container">
+        <div class="about__content">
+          <!-- SLOT: ABOUT_VIDEO_SLOT -->
+          <div class="about__visual slot slot--video" data-slot="ABOUT_VIDEO_SLOT">
+            <div class="video-placeholder">
+              <span class="play-icon">▶</span>
+              <span>COLOCA AQUÍ VIDEO QUIÉNES SOMOS</span>
+            </div>
+          </div>
+
+          <div class="about__text">
+            <h2 class="section-title">Quiénes somos</h2>
+            <p class="about__description">
+              Somos una startup tecnológica especializada en soluciones inteligentes para estacionamientos urbanos.
+              Nuestra misión es optimizar el uso de espacios mediante IoT, automatización RPA y asistencia 24/7.
+            </p>
+            <p class="about__description">
+              Creemos en la tecnología como motor de ciudades más eficientes y sostenibles.
+              Conectamos a propietarios y conductores para crear un ecosistema de estacionamiento inteligente.
+            </p>
+            <div class="about__stats">
+              <div class="stat">
+                <strong>1000+</strong>
+                <span>Espacios conectados</span>
+              </div>
+              <div class="stat">
+                <strong>5000+</strong>
+                <span>Usuarios activos</span>
+              </div>
+              <div class="stat">
+                <strong>95%</strong>
+                <span>Satisfacción</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planes -->
+    <section id="planes" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Planes y precios</h2>
+          <p class="section-subtitle">La app para conductores es gratuita; pagas solo por uso.</p>
+        </div>
+
+        <div class="pricing__grid">
+          <div class="pricing__card">
+            <h3 class="pricing__title">Free</h3>
+            <div class="pricing__price">
+              <span class="pricing__amount">S/. 0</span>
+              <span class="pricing__period">/mes</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Hasta 5 espacios</li>
+              <li>Analítica</li>
+            </ul>
+            <button class="btn btn--outline">Empezar ahora</button>
+          </div>
+
+          <div class="pricing__card pricing__card--featured">
+            <div class="pricing__badge">Más popular</div>
+            <h3 class="pricing__title">Pro</h3>
+            <div class="pricing__price">
+              <span class="pricing__amount">S/. 79.90</span>
+              <span class="pricing__period">/mes</span>
+            </div>
+            <ul class="pricing__features">
+              <li>Hasta 20 espacios</li>
+              <li>Analítica</li>
+              <li>Datos de su estacionamiento preciso </li>
+              <li>Robotizacion de procesos </li>
+
+            </ul>
+            <button class="btn btn--primary">Empezar ahora</button>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="resenas" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
+        </div>
+
+        <div class="testimonials__grid">
+          <div class="testimonial">
+            <!-- SLOT: TESTIMONIAL_AVATAR_SLOT_1 -->
+            <div class="testimonial__avatar slot slot--avatar" data-slot="TESTIMONIAL_AVATAR_SLOT_1">
+              <span>👤</span>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__rating">★★★★★</div>
+              <p class="testimonial__text">"Increíble cómo ha aumentado mis ingresos pasivos. La automatización es perfecta."</p>
+              <div class="testimonial__author">
+                <strong>María González</strong>
+                <span>Propietaria</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <!-- SLOT: TESTIMONIAL_AVATAR_SLOT_2 -->
+            <div class="testimonial__avatar slot slot--avatar" data-slot="TESTIMONIAL_AVATAR_SLOT_2">
+              <span>👤</span>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__rating">★★★★★</div>
+              <p class="testimonial__text">"Ya no pierdo tiempo buscando estacionamiento. La app es muy intuitiva."</p>
+              <div class="testimonial__author">
+                <strong>Carlos Ruiz</strong>
+                <span>Conductor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <!-- SLOT: TESTIMONIAL_AVATAR_SLOT_3 -->
+            <div class="testimonial__avatar slot slot--avatar" data-slot="TESTIMONIAL_AVATAR_SLOT_3">
+              <span>👤</span>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__rating">★★★★★</div>
+              <p class="testimonial__text">"El IoT funciona perfecto. Me notifica todo automáticamente."</p>
+              <div class="testimonial__author">
+                <strong>Ana López</strong>
+                <span>Propietaria</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <!-- SLOT: TESTIMONIAL_AVATAR_SLOT_4 -->
+            <div class="testimonial__avatar slot slot--avatar" data-slot="TESTIMONIAL_AVATAR_SLOT_4">
+              <span>👤</span>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__rating">★★★★★</div>
+              <p class="testimonial__text">"Pagos seguros y rápidos. El chatbot resuelve todas mis dudas."</p>
+              <div class="testimonial__author">
+                <strong>Luis Torres</strong>
+                <span>Conductor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <!-- SLOT: TESTIMONIAL_AVATAR_SLOT_5 -->
+            <div class="testimonial__avatar slot slot--avatar" data-slot="TESTIMONIAL_AVATAR_SLOT_5">
+              <span>👤</span>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__rating">★★★★★</div>
+              <p class="testimonial__text">"Gestión completamente automatizada. Me encanta la simplicidad."</p>
+              <div class="testimonial__author">
+                <strong>Elena Vargas</strong>
+                <span>Propietaria</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <!-- SLOT: TESTIMONIAL_AVATAR_SLOT_6 -->
+            <div class="testimonial__avatar slot slot--avatar" data-slot="TESTIMONIAL_AVATAR_SLOT_6">
+              <span>👤</span>
+            </div>
+            <div class="testimonial__content">
+              <div class="testimonial__rating">★★★★★</div>
+              <p class="testimonial__text">"Reservo desde casa y llego directo a mi espacio. Muy eficiente."</p>
+              <div class="testimonial__author">
+                <strong>Miguel Sánchez</strong>
+                <span>Conductor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contáctanos</h2>
+        </div>
+
+        <div class="contact__content">
+          <form class="contact__form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre y apellido</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+              <span class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+              <span class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="type" class="form-label">Tipo de usuario</label>
+              <select id="type" name="type" class="form-input" required>
+                <option value="">Selecciona una opción</option>
+                <option value="propietario">Propietario</option>
+                <option value="conductor">Conductor</option>
+              </select>
+              <span class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+          </form>
+
+          <div class="contact__info">
+            <div class="contact-card">
+              <!-- SLOT: CONTACT_WHATSAPP_SLOT -->
+              <div class="contact-card__icon slot" data-slot="CONTACT_WHATSAPP_SLOT">📱</div>
+              <h3 class="contact-card__title">WhatsApp</h3>
+              <p class="contact-card__text">+51 999 888 777</p>
+            </div>
+
+            <div class="contact-card">
+              <!-- SLOT: CONTACT_MAIL_SLOT -->
+              <div class="contact-card__icon slot" data-slot="CONTACT_MAIL_SLOT">✉️</div>
+              <h3 class="contact-card__title">Email</h3>
+              <p class="contact-card__text">hola@spotfinder.pe</p>
+            </div>
+
+            <div class="contact-card">
+              <!-- SLOT: CONTACT_PHONE_SLOT -->
+              <div class="contact-card__icon slot" data-slot="CONTACT_PHONE_SLOT">📞</div>
+              <h3 class="contact-card__title">Teléfono</h3>
+              <p class="contact-card__text">+51 1 234 5678</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">🕒</div>
+              <h3 class="contact-card__title">Horario</h3>
+              <p class="contact-card__text">Lun-Vie: 9:00-18:00<br>Sáb: 9:00-13:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <h3 class="footer__title">SpotFinder</h3>
+          <p class="footer__description">
+            Estacionamientos inteligentes para ciudades del futuro.
+          </p>
+          <address class="footer__address">
+            Av. Larco 1234, Miraflores<br>
+            Lima 15074, Perú
+          </address>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Legal</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Términos de uso</a></li>
+              <li><a href="#" class="footer__link">Política de privacidad</a></li>
+              <li><a href="#" class="footer__link">Política de cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Soporte</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Centro de ayuda</a></li>
+              <li><a href="#" class="footer__link">Contacto</a></li>
+              <li><a href="#" class="footer__link">Estado del servicio</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Recursos</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Blog</a></li>
+              <li><a href="#" class="footer__link">API</a></li>
+              <li><a href="#" class="footer__link">Documentación</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Síguenos</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Facebook</a></li>
+              <li><a href="#" class="footer__link">Instagram</a></li>
+              <li><a href="#" class="footer__link">LinkedIn</a></li>
+              <li><a href="#" class="footer__link">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 SpotFinder. Todos los derechos reservados.
+        </p>
+        <div class="footer__secondary-links">
+          <a href="#" class="footer__link">Términos</a>
+          <a href="#" class="footer__link">Privacidad</a>
+          <a href="#" class="footer__link">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
