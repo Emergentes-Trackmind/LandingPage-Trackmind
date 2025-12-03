@@ -275,6 +275,21 @@ ol {
   gap: var(--space-3);
 }
 
+.services__video .video-wrapper {
+  display: inline-block;       
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-embed {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
 .play-icon {
   font-size: var(--font-size-4xl);
   color: var(--brand-sky);
@@ -399,6 +414,22 @@ ol {
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: -0.025em;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 70px;             
+  width: auto;
+  display: block;
+
+  border-radius: 12px;       
+  padding: 4px;              
+  background-color: #ffffff; 
+  box-shadow: var(--shadow-sm); 
 }
 
 .nav {
@@ -647,7 +678,7 @@ section {
 .hero__search {
   display: flex;
   gap: var(--space-2);
-  margin-top: var(--space-6);
+  margin-top: var(--space-20);
   padding: var(--space-2);
   background: white;
   border-radius: var(--radius-xl);
@@ -947,6 +978,16 @@ section {
 .services__video {
   margin-bottom: var(--space-12);
   position: relative;
+  text-align: center;
+}
+
+.services__video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: block;
 }
 
 .services__features {
@@ -1799,5 +1840,64 @@ section {
     border-color: var(--gray-600);
     background: linear-gradient(135deg, var(--gray-800) 0%, var(--gray-900) 100%);
     color: var(--gray-300);
+  }
+}
+
+.slot--video {
+  border: none !important;
+}
+
+.slot--video[data-slot="HERO_MOCKUP_SLOT"] {
+  border: none !important;
+  background: transparent;
+  padding: 0;
+}
+
+/* Contenedor de los mockups */
+.hero-mockup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo base de cada pantalla */
+.hero-mockup__image {
+  position: absolute;
+  max-height: 420px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 24px;
+  box-shadow: var(--shadow-2xl);
+}
+
+/* Pantalla izquierda (mapa) */
+.hero-mockup__image--left {
+  left: 20%;
+  transform: translateX(-20%) scale(0.95);
+}
+
+/* Pantalla derecha (reserva) */
+.hero-mockup__image--right {
+  left: 55%;
+  transform: translateX(-20%);
+}
+
+/* En pantallas pequeñas, las ponemos una debajo de la otra para que no se rompa */
+@media (max-width: 768px) {
+  .hero-mockup {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .hero-mockup__image {
+    position: static;
+    max-height: 360px;
+    width: 80%;
+    margin: 0 auto;
   }
 }

@@ -35,9 +35,12 @@
     <div class="container">
       <div class="header__content">
         <!-- SLOT: LOGO_SLOT -->
-        <div class="slot slot--logo" data-slot="LOGO_SLOT">
-          <span class="logo">SpotFinder</span>
-          <!-- COLOCA AQUÍ TU LOGO (160×40) -->
+        <div class="header-logo">
+          <img
+            src="Logo.jpg"
+            alt="SpotFinder"
+            class="logo-img"
+          />
         </div>
 
         <nav class="nav" role="navigation" aria-label="Navegación principal">
@@ -80,11 +83,11 @@
             </div>
 
             <!-- SLOT: HERO_STORES_SLOT -->
-            <div class="hero__stores slot" data-slot="HERO_STORES_SLOT">
+            <!--<div class="hero__stores slot" data-slot="HERO_STORES_SLOT">
               <div class="store-badge">App Store</div>
               <div class="store-badge">Google Play</div>
-            </div>
-
+            </div> 
+            -->
             <div class="hero__badges">
               <span class="badge">IoT en tiempo real</span>
               <span class="badge">Alertas inteligentes</span>
@@ -95,8 +98,19 @@
           <div class="hero__visual">
             <!-- SLOT: HERO_MOCKUP_SLOT -->
             <div class="slot slot--video" data-slot="HERO_MOCKUP_SLOT">
-              <span>COLOCA AQUÍ IMAGEN/MOCKUP (mapa + teléfono)</span>
-            </div>
+              <div class="hero-mockup">
+                <img
+                  src="mockup-mapa.jpg"
+                  alt="Vista del mapa de disponibilidad de estacionamientos"
+                  class="hero-mockup__image hero-mockup__image--left"
+                />
+                <img
+                  src="mockup-app.jpg"
+                  alt="Pantalla de reserva de estacionamiento"
+                  class="hero-mockup__image hero-mockup__image--right"
+                />
+              </div>
+            </div> 
             <div class="hero__search">
               <input type="text" placeholder="¿Dónde quieres aparcar?" class="search-input">
               <button class="search-btn">Buscar</button>
@@ -256,10 +270,13 @@
         </div>
 
         <!-- SLOT: SERVICES_VIDEO_SLOT -->
-        <div class="services__video slot slot--video" data-slot="SERVICES_VIDEO_SLOT">
-          <div class="video-placeholder">
-            <span class="play-icon">▶</span>
-            <span>COLOCA AQUÍ TU VIDEO DE PLATAFORMA (MP4/YouTube)</span>
+        <div class="services__video" data-slot="SERVICES_VIDEO_SLOT">
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2kWXhWItfZU?si=2PMFf-7sUPzFDPb-" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
 
@@ -280,10 +297,15 @@
       <div class="container">
         <div class="about__content">
           <!-- SLOT: ABOUT_VIDEO_SLOT -->
-          <div class="about__visual slot slot--video" data-slot="ABOUT_VIDEO_SLOT">
+          <div class="about__visual" data-slot="ABOUT_VIDEO_SLOT">
             <div class="video-placeholder">
-              <span class="play-icon">▶</span>
-              <span>COLOCA AQUÍ VIDEO QUIÉNES SOMOS</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Ll_kRRP-cmo?si=hTWVKN3WlVHmGV3t" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
             </div>
           </div>
 
@@ -484,7 +506,10 @@
         </div>
 
         <div class="contact__content">
-          <form class="contact__form" novalidate>
+          <form class="contact__form" class="contact__form"
+              action="mailto:hola@spotfinder.pe"
+              method="POST"
+              enctype="text/plain">
             <div class="form-group">
               <label for="name" class="form-label">Nombre y apellido</label>
               <input type="text" id="name" name="name" class="form-input" required>
