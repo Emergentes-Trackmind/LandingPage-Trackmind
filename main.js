@@ -1178,9 +1178,15 @@ function showAppDownloadModal() {
       <button class="btn btn--outline" style="flex: 1;" data-action="close">
         Cerrar
       </button>
-      <button class="btn btn--primary" style="flex: 1;" data-action="notify">
-        Notificarme
-      </button>
+      <a
+      href="https://appdistribution.firebase.dev/i/8418f33986955dea"
+      class="btn btn--primary"
+      style="flex: 1; display: inline-flex; justify-content: center; align-items: center; text-decoration: none;"
+      target="_blank"
+      rel="noopener noreferrer"
+      >
+      Solicitar Descarga
+      </a>
     </div>
 
     <p style="font-size: var(--font-size-sm); color: var(--gray-500);">
